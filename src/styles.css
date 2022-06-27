@@ -67,7 +67,6 @@ a {
 
 .button:is(:hover, :focus) {
 	cursor: pointer;
-	text-decoration: underline 0.5px;
 	box-shadow: 4px 0 14px rgba(72, 177, 234, 0.5);
 }
 
