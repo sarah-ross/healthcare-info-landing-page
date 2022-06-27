@@ -9,6 +9,7 @@ header {
 
 ul li {
 	list-style: none;
+   font-weight: bold;
 }
 
 h1,
@@ -18,7 +19,7 @@ p,
 }
 
 h1 {
-	font-size: 4.5ch;
+	font-size: 4ch;
 	font-weight: 700;
 }
 
