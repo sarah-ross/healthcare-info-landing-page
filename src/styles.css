@@ -1,0 +1,102 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	padding: 1em 2.5em;
+	vertical-align: center;
+}
+
+ul li {
+	list-style: none;
+}
+
+h1,
+p,
+.button a {
+	color: white;
+}
+
+h1 {
+	font-size: 4.5ch;
+	font-weight: 700;
+}
+
+p {
+	font-size: 2ch;
+	width: 60%;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container-fluid {
+	background-image: url(background.png);
+	background-size: cover;
+	background-position: fixed;
+	text-align: center;
+	padding: 5em;
+}
+
+.logo {
+	height: 46px;
+}
+
+.button {
+	margin: 0 auto;
+	margin-top: 3.25em;
+	text-align: center;
+	font-size: 2.25ch;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: linear-gradient(
+		89deg,
+		rgb(21, 74, 189) 0.1%,
+		rgb(26, 138, 211) 51.5%,
+		rgb(72, 177, 234) 100.2%
+	);
+	border-radius: 4px;
+	width: fit-content;
+	padding: 13px 26px;
+	transition: all 0.4s ease-in;
+}
+
+.button:is(:hover, :focus) {
+	cursor: pointer;
+	text-decoration: underline 0.5px;
+	transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+	p {
+		width: 100%;
+	}
+
+	.container-fluid {
+		text-align: unset;
+	}
+
+	.button {
+		margin: unset;
+		margin-top: 3.25em;
+	}
+}
+
+@media (max-width: 543px) {
+	ul li {
+		display: none;
+	}
+
+	.logo {
+		height: 40px;
+		margin: 0 auto;
+		margin-bottom: 1em;
+	}
+
+	.container-fluid {
+		padding: 4em 1.5em;
+	}
+}
